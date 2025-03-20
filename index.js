@@ -21,10 +21,6 @@ mongoose
 app.use(cors());
 app.use(express.json());
 
-// Routes
-app.use('/api/clients', clientRoutes);
-app.use('/api/commandes', commandeRoutes);
-
 // Route de test
 app.get('/', (req, res) => {
     res.send('API Poz-pizza fonctionnelle ! 🍕');
